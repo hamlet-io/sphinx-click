@@ -80,21 +80,21 @@ class CommandTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --param <param>
+        .. option:: --param [param]
 
             A sample option
 
-        .. option:: --another <FOO>
+        .. option:: --another [FOO]
 
             Another option
 
-        .. option:: --choice <choice>
+        .. option:: --choice [choice]
 
             A sample option with choices
 
             :options: Option1 | Option2
 
-        .. option:: --numeric-choice <choice>
+        .. option:: --numeric-choice [choice]
 
             A sample option with numeric choices
 
@@ -149,7 +149,7 @@ class CommandTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --param <param>
+        .. option:: --param [param]
 
             A sample option
 
@@ -200,19 +200,19 @@ class CommandTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --num-param <num_param>
+        .. option:: --num-param [num_param]
 
             :default: 42
 
-        .. option:: --param <param>
+        .. option:: --param [param]
 
             :default: Something computed at runtime
 
-        .. option:: --group <group>
+        .. option:: --group [group]
 
             :default: ('foo', 'bar')
 
-        .. option:: --only-show-default <only_show_default>
+        .. option:: --only-show-default [only_show_default]
 
             :default: Some default computed at runtime!
         """
@@ -271,7 +271,7 @@ class CommandTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --name <name>
+        .. option:: --name [name]
 
             **Required** Name to say hello to.
         """
@@ -325,17 +325,17 @@ class CommandTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --name <name>
+        .. option:: --name [name]
 
             **Required** Name to say hello to.
 
-        .. option:: --choice <choice>
+        .. option:: --choice [choice]
 
             A sample option with choices
 
             :options: Option1 | Option2
 
-        .. option:: --param <param>
+        .. option:: --param [param]
 
             :default: Something computed at runtime
 
@@ -453,7 +453,7 @@ class GroupTestCase(unittest.TestCase):
 
         .. rubric:: Options
 
-        .. option:: --param <param>
+        .. option:: --param [param]
 
             A sample option
 

@@ -54,7 +54,7 @@ def _get_help_record(opt):
             name = opt.name
             if opt.metavar:
                 name = opt.metavar.lstrip('<[{($').rstrip('>]})$')
-            rv += ' <{}>'.format(name)
+            rv += ' [{}]'.format(name)
         return rv
 
     rv = [_write_opts(opt.opts)]
